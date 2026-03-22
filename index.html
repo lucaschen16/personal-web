@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucas Chen</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111111;
+            --muted: #666666;
+            --line: #e7e7e7;
+            --link: #0f62fe;
+            --max: 640px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .wrap {
+            max-width: var(--max);
+            margin: 0 auto;
+            padding: 24px 16px 40px;
+        }
+
+        nav {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            font-size: 13px;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        nav a:hover,
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            line-height: 1.1;
+            margin: 0 0 12px;
+        }
+
+        h2 {
+            font-size: 1rem;
+            margin: 28px 0 10px;
+            padding-top: 6px;
+            border-top: 1px solid var(--line);
+        }
+
+        p {
+            margin: 0 0 14px;
+        }
+
+        .muted {
+            color: var(--muted);
+        }
+
+        .intro {
+            margin-bottom: 10px;
+        }
+
+        .card-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+
+        .card h3 {
+            margin: 0 0 4px;
+            font-size: 0.95rem;
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: 0.8rem;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            margin: 8px 0 0 20px;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .links {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            padding: 0;
+            list-style: none;
+            margin: 8px 0 0;
+        }
+
+        .links a {
+            color: var(--link);
+        }
+
+        .empty-note {
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        .card h3 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .card h3 a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: var(--muted);
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 640px) {
+            .wrap {
+                padding-top: 24px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrap">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#writing">Writing</a>
+            <a href="#socials">Socials</a>
+        </nav>
+
+        <section id="home">
+            <h1>Lucas Chen</h1>
+            <p class="intro">
+                I’m an incoming Systems Design Engineering student at the University of Waterloo.
+                I’m interested in software, design, and building useful things.
+            </p>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="card-list">
+                <article class="card">
+                    <h3>VolunTrack</h3>
+                    <p>
+                        Built and optimized a user profile page with CSS and JavaScript, improving UI responsiveness.
+                        Worked with a team to implement new UI components and supported design using Figma.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card-list">
+                <article class="card">
+                    <h3>  <a href="https://github.com/lucaschen16/Valorant-Website" target="_blank" rel="noreferrer">Valorant Information Website</a></h3>
+                    <p>
+                        A website about Valorant with information on agents, maps, and game features.
+                        Built to practice front-end structure, styling, and interactivity.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="https://github.com/lucaschen16/DiseaseSim" target="_blank" rel="noreferrer">Disease Spread Simulation</a></h3>
+                    <p>
+                        A simulation project using object-oriented programming concepts like inheritance and
+                        polymorphism.
+                        Models people, diseases, cures, and regions.
+                    </p>
+                </article>
+
+                <article class="card">
+                    <h3><a href="https://github.com/lucaschen16/Battleship" target="_blank" rel="noreferrer">Battleship Game</a></h3>
+                    <p>
+                        A Java-based Battleship game with grid-based ship placement and turn-based gameplay.
+                        Implemented game logic for tracking hits, misses, and win conditions.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="writing">
+            <h2>Writing</h2>
+            <p class="empty-note">
+
+            </p>
+        </section>
+
+        <section id="socials">
+            <h2>Socials</h2>
+            <ul class="links">
+                <li><a href="https://github.com/lucaschen16" target="_blank" rel="noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-chen-977aba285/" target="_blank"
+                        rel="noreferrer">LinkedIn</a></li>
+                <li><a href="https://x.com/_lucaschen" target="_blank" rel="noreferrer">X</a></li>
+                <li><a href="mailto:lucaschen416@gmail.com">Email</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
