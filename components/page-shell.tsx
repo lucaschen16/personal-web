@@ -35,25 +35,26 @@ export function PageShell({ children }: PageShellProps) {
   }, [menuOpen]);
 
   return (
-    <div className="min-h-screen w-full px-6 pb-10 pt-4 sm:px-8 sm:pb-12 sm:pt-5">
+    <div className="min-h-screen w-full px-6 pb-10 pt-7 sm:px-8 sm:pb-12 sm:pt-8">
+      <button
+        type="button"
+        className="fixed right-6 top-7 z-40 inline-flex h-11 w-11 items-center justify-center rounded-md text-ink transition-colors duration-150 hover:bg-neutral-200 sm:right-8 sm:top-8 md:hidden"
+        aria-label="Open menu"
+        aria-expanded={menuOpen}
+        aria-controls="site-nav-overlay"
+        tabIndex={menuOpen ? -1 : undefined}
+        aria-hidden={menuOpen}
+        onClick={() => setMenuOpen(true)}
+      >
+        <MenuIcon />
+      </button>
+
       <div className="mx-auto flex w-full max-w-xl flex-col">
-        <header className="mb-6 sm:mb-8">
-          <div className="flex justify-end md:hidden">
-            <button
-              type="button"
-              className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-ink transition-colors duration-150 hover:bg-neutral-200"
-              aria-label="Open menu"
-              aria-expanded={menuOpen}
-              aria-controls="site-nav-overlay"
-              onClick={() => setMenuOpen(true)}
-            >
-              <MenuIcon />
-            </button>
-          </div>
+        <header className="mb-6 hidden sm:mb-8 md:block">
           <nav
             id="site-nav"
             aria-label="Primary navigation"
-            className="hidden gap-x-6 gap-y-2 text-base leading-normal text-ink md:flex md:flex-row md:flex-wrap"
+            className="flex flex-row flex-wrap gap-x-6 gap-y-2 text-base leading-normal text-ink"
           >
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="link-hit-inline">
@@ -73,7 +74,7 @@ export function PageShell({ children }: PageShellProps) {
           aria-modal="true"
           aria-label="Site menu"
         >
-          <div className="flex justify-end px-6 pt-4 sm:px-8 sm:pt-5">
+          <div className="flex justify-end px-6 pt-7 sm:px-8 sm:pt-8">
             <button
               type="button"
               className="-mr-2 inline-flex h-11 w-11 items-center justify-center rounded-md text-ink transition-colors duration-150 hover:bg-neutral-200"
