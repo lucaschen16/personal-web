@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply min-h-screen bg-paper text-ink antialiased;
+}
+
+a {
+  @apply text-inherit no-underline transition-colors duration-150 ease-out;
+}
+
+a:hover {
+  @apply bg-neutral-200;
+}
+
+@layer components {
+  /* Stretch tap/click target beyond the text bounds */
+  .link-hit-inline {
+    @apply -mx-1 inline-block rounded-sm px-3 py-2;
+  }
+
+  .link-hit-block {
+    @apply -mx-3 block rounded-sm px-3 py-3;
+  }
+
+  .link-hit-menu-row {
+    @apply block w-full px-6 py-4 text-center;
+  }
+}
+
+::selection {
+  @apply bg-neutral-200 text-ink;
+}
