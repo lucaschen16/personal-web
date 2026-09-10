@@ -8,11 +8,6 @@ export const metadata = {
 export default function ExperiencePage() {
   return (
     <SectionCard title="Experience">
-      <p>Looking for some.</p>
-    </SectionCard>
-  );
-  return (
-    <SectionCard title="Experience">
       <div className="space-y-10">
         {experiences.map((experience) => (
           <article key={experience.title}>
