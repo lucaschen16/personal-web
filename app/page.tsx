@@ -7,11 +7,11 @@ export default function HomePage() {
         Lucas Chen
       </h1>
       <p className="text-base leading-relaxed sm:text-[17px] sm:leading-7">
-        I&apos;m an incoming Systems Design Engineering student at the{" "}
+        I&apos;m a Systems Design Engineering student at the{" "}
         <a href="https://uwaterloo.ca" target="_blank" rel="noreferrer">
           University of Waterloo
         </a>
-        . I&apos;m interested in software, design, and building useful things.
+        . I&apos;m interested in software and design.
       </p>
       <section className="space-y-4 pt-2">
         <h2 className="text-xl font-bold sm:text-2xl">Socials</h2>

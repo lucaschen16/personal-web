@@ -30,7 +30,7 @@ export const navItems: NavItem[] = [
 export const socialLinks: SocialLink[] = [
   { href: "https://github.com/lucaschen16", label: "GitHub" },
   {
-    href: "https://www.linkedin.com/in/lucas-chen-977aba285/",
+    href: "https://www.linkedin.com/in/lucaschen2/",
     label: "LinkedIn",
   },
   { href: "https://x.com/_lucaschen", label: "X" },
