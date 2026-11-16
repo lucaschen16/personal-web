@@ -7,7 +7,7 @@ export const metadata = {
 export default function WritingPage() {
   return (
     <SectionCard title="Writing">
-      <p>Coming soon.</p>
+      <p>Coming soon...</p>
     </SectionCard>
   );
 }

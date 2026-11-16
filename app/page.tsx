@@ -11,7 +11,7 @@ export default function HomePage() {
         <a href="https://uwaterloo.ca" target="_blank" rel="noreferrer">
           University of Waterloo
         </a>
-        . I&apos;m interested in software and design.
+        . I&apos;m interested in software.
       </p>
       <section className="space-y-4 pt-2">
         <h2 className="text-xl font-bold sm:text-2xl">Socials</h2>

@@ -39,22 +39,28 @@ export const socialLinks: SocialLink[] = [
 
 export const projects: Project[] = [
   {
-    title: "Valorant Information Website",
-    href: "https://github.com/lucaschen16/Valorant-Website",
+    title: "Volume Gesture",
+    href: "https://github.com/lucaschen16/volume-gesture",
     description:
-      "A website about Valorant with information on agents, maps, and game features. Built to practice front-end structure, styling, and interactivity.",
+      "Real-time webcam app that maps a hand gesture to system volume. Uses MediaPipe landmarks, OpenCV for capture and feedback, and thumb–index distance as a continuous volume scale.",
   },
   {
-    title: "Disease Spread Simulation",
-    href: "https://github.com/lucaschen16/DiseaseSim",
+    title: "AI Portfolio Builder",
+    href: "https://github.com/lucaschen16/ai-portfolio-builder",
     description:
-      "A simulation project using object-oriented programming concepts like inheritance and polymorphism. Models people, diseases, cures, and regions.",
+      "Flask web app with a REST API for answering natural-language questions about financial news. Modular Blueprints, environment-based config, and LLM agents that retrieve and summarize news.",
   },
   {
-    title: "Battleship Game",
-    href: "https://github.com/lucaschen16/Battleship",
+    title: "Autonomous Robot Navigation Stack",
+    href: "https://github.com/lucaschen16/wato_asd_training",
     description:
-      "A Java-based Battleship game with grid-based ship placement and turn-based gameplay. Implemented game logic for tracking hits, misses, and win conditions.",
+      "Four-node ROS 2 pipeline in C++17 that turns lidar scans into point-to-point navigation in simulation. Occupancy-grid costmap, A* pathfinding with replanning, tested in Gazebo and visualized in Foxglove.",
+  },
+  {
+    title: "Student Registration System",
+    href: "https://github.com/lucaschen16/StudentRegistration",
+    description:
+      "Android app for student registration and course information with email-and-password authentication. Kotlin, XML layouts, and SQL to persist records across screens.",
   },
 ];
 

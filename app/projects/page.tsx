@@ -11,10 +11,17 @@ export default function ProjectsPage() {
       <div className="space-y-10">
         {projects.map((project) => (
           <article key={project.title}>
-            <a href={project.href} target="_blank" rel="noreferrer" className="link-hit-block">
-              <h2 className="text-lg font-bold">{project.title}</h2>
-              <p className="mt-2">{project.description}</p>
-            </a>
+            {project.href ? (
+              <a href={project.href} target="_blank" rel="noreferrer" className="link-hit-block">
+                <h2 className="text-lg font-bold">{project.title}</h2>
+                <p className="mt-2">{project.description}</p>
+              </a>
+            ) : (
+              <>
+                <h2 className="text-lg font-bold">{project.title}</h2>
+                <p className="mt-2">{project.description}</p>
+              </>
+            )}
           </article>
         ))}
       </div>
