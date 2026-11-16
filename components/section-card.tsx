@@ -6,7 +6,7 @@ type SectionCardProps = {
 
 export function SectionCard({ title, eyebrow, children }: SectionCardProps) {
   return (
-    <section className="space-y-6">
+    <section className="space-y-4">
       {eyebrow ? (
         <p className="text-sm font-normal text-ink">{eyebrow}</p>
       ) : null}
